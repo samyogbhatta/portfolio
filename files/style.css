@@ -42,7 +42,7 @@ body {
 
 .navbar a {
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -64,7 +64,7 @@ body {
     position: relative;
     width: 100%;
     justify-content: space-between;
-    min-height: 110vh;
+    min-height: 100vh;
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,7 @@ body {
 }
 
 .home-content h1 {
-    font-size: 60px;
+    font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
     letter-spacing: 5px;
@@ -155,33 +155,22 @@ body {
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
+/* Style for Hire Me button */
+.hire-me-btn {
+    display: inline-block;
+    padding: 15px ;
+    background-color: #fa07b5; /* Change the background color as needed */
+    color:black;
+    text-decoration: none;
+    border-radius: 70px;
+    transition: background-color 0.3s ease;
+    margin-left: 40px;
+}
+
 
 .btn-box:hover {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
-.hire-me-btn {
-    /* Additional styles for the "Hire Me" button */
-    /* For example: */
-    margin-left: 30px; /* Adjust the spacing as needed */
-}
-.hire-me-btn {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #ec1ec7;
-    border-radius: 60px;
-    font-size: 15px;
-    text-align: center;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
-   
-}
-
-
 
 .img {
     display: inline-block;
@@ -193,7 +182,7 @@ body {
     background-position: center center;
     background-size: cover;
     position: absolute;
-    opacity: 2;
+    opacity: 0;
     animation: slideUP 1s ease forwards;
     animation-delay: 1s;
 }
@@ -306,16 +295,16 @@ body {
 }
 
 .container1 {
-    width: 900px;
-    max-height: 600px;
-    padding: 20px;
-    margin-left: 200px;
+    width: 600px;
+    max-height: 500px;
+    padding: 10px;
+    margin-left: 100px;
 }
 .container2 {
-    width: 700px;
+    width: 600px;
     max-height: 500px;
-    padding: 15px;
-    margin-left: 150px;
+    padding: 10px;
+    margin-left: 100px;
 }
 
 .heading1 {
@@ -369,7 +358,7 @@ body {
     height: 100%;
     background-color: #0ef;
     position: absolute;
-    border-radius: 20px;
+    border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
@@ -663,7 +652,7 @@ body {
     font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
-    transition:  0.5s, transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
     /*box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;*/
     border: #0ef 5px solid;
 }
@@ -1229,7 +1218,7 @@ body {
         margin-left: 0px;
     }
     .radial-bar .text{
-        left: 35%;
+        left: 25%;
     }
     .bar .info .addhtml::before{
         content: "90%";
