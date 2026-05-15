@@ -106,12 +106,12 @@ body {
     transition: var(--transition);
 }
 
-.navbar a:hover:after, 
+.navbar a:hover:after,
 .navbar a.active:after {
     width: 100%;
 }
 
-.navbar a:hover, 
+.navbar a:hover,
 .navbar a.active {
     color: var(--primary-color);
 }
@@ -788,6 +788,7 @@ body {
     font-size: 20px;
     margin-bottom: 15px;
     color: var(--text-color);
+    word-break: break-word;
 }
 
 .project-card p {
@@ -1034,7 +1035,7 @@ body {
     font-weight: 500;
 }
 
-.input-group input, 
+.input-group input,
 .input-group textarea {
     width: 100%;
     padding: 15px;
@@ -1046,7 +1047,7 @@ body {
     transition: var(--transition);
 }
 
-.input-group input:focus, 
+.input-group input:focus,
 .input-group textarea:focus {
     border-color: var(--primary-color);
     outline: none;
@@ -1184,6 +1185,7 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1194,6 +1196,7 @@ footer {
         transform: translateY(50px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -1205,6 +1208,7 @@ footer {
         transform: translateY(-50px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -1215,9 +1219,11 @@ footer {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -1228,10 +1234,12 @@ footer {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(0, 238, 255, 0.7);
     }
+
     70% {
         transform: scale(1.05);
         box-shadow: 0 0 0 10px rgba(0, 238, 255, 0);
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(0, 238, 255, 0);
@@ -1243,12 +1251,15 @@ footer {
         transform: translateX(0) translateY(0);
         opacity: 0;
     }
+
     10% {
         opacity: 1;
     }
+
     90% {
         opacity: 1;
     }
+
     100% {
         transform: translateX(100vw) translateY(100vh);
         opacity: 0;
@@ -1261,38 +1272,38 @@ footer {
         flex-direction: column;
         gap: 50px;
     }
-    
+
     .home-text {
         text-align: center;
         max-width: none;
     }
-    
+
     .home-sci {
         justify-content: center;
     }
-    
+
     .cta-buttons {
         justify-content: center;
     }
-    
+
     .img-container {
         margin-top: 50px;
     }
-    
+
     .about {
         flex-direction: column;
     }
-    
+
     .about-img {
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
     }
-    
+
     .contact-container {
         flex-direction: column;
     }
-    
+
     .contact-info {
         max-width: none;
     }
@@ -1302,7 +1313,7 @@ footer {
     .header {
         padding: 15px 5%;
     }
-    
+
     .navbar {
         position: fixed;
         top: 80px;
@@ -1315,50 +1326,50 @@ footer {
         transition: var(--transition);
         border-top: 1px solid var(--border-color);
     }
-    
+
     .navbar.active {
         left: 0;
     }
-    
+
     .navbar a {
         margin: 15px 0;
         font-size: 20px;
         display: block;
         text-align: center;
     }
-    
+
     .mobile-menu-btn {
         display: block;
     }
-    
+
     .home-text h1 {
         font-size: 45px;
     }
-    
+
     .home-text h3 {
         font-size: 28px;
     }
-    
+
     .home-text h4 {
         font-size: 24px;
     }
-    
-    .about, 
-    .skills-container, 
-    .projects-section, 
-    .services-section, 
+
+    .about,
+    .skills-container,
+    .projects-section,
+    .services-section,
     .contact-section,
     .footer-content {
         width: 90%;
     }
-    
+
     .about-text h2,
     .subtitle,
     .projects-section h2,
     .contact-section h2 {
         font-size: 40px;
     }
-    
+
     .input-row {
         flex-direction: column;
         gap: 0;
@@ -1369,89 +1380,308 @@ footer {
     .home {
         padding: 100px 5% 50px;
     }
-    
+
     .home-text h1 {
         font-size: 36px;
     }
-    
+
     .home-text h3 {
         font-size: 24px;
     }
-    
+
     .home-text h4 {
         font-size: 20px;
     }
-    
+
     .home-desc {
         font-size: 16px;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .img-container img {
         max-width: 300px;
     }
-    
+
     .about-text h2,
     .subtitle,
     .projects-section h2,
     .contact-section h2 {
         font-size: 32px;
     }
-    
+
     .about-stats {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .github-stats {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    
+
     .github-stat-box {
         width: 100
-    
     }
-      .github-stat-box {
+
+    .github-stat-box {
         width: 100%;
         max-width: 300px;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .footer-logo {
         margin-bottom: 30px;
     }
-    
+
     .footer-links {
         gap: 30px;
         justify-content: center;
     }
-    
+
     .footer-link-group h3:after {
         left: 50%;
         transform: translateX(-50%);
     }
-    
-    .service-card, .skill-card, .project-card {
+
+    .service-card,
+    .skill-card,
+    .project-card {
         height: auto;
     }
 
-    
+
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 15, 15, 0.9);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.left-btn {
+    left: 0px;
+}
+
+.right-btn {
+    right: 0px;
+}
+
+.carousel-btn:hover {
+    opacity: 1;
+    background: var(--primary-color);
+    color: var(--darker-bg);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.projects-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2rem;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.project-card {
+    min-width: 300px;
+    /* Adjust based on your design */
+    flex: 0 0 300px;
+    /* Important for consistent width in carousel */
+    /* ...your existing .project-card styles... */
+}
+
+/* Project Card Animations (Add to bottom of style.css) */
+
+.project-card {
+    transition: all 0.4s ease;
+    cursor: pointer;
+    height: auto;
+    /* ADD transition property */
+    /* Remove hover-related transform you added previously if any */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    /* 👇 Changes */
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    /* Lift and slight shadow increase */
+    border-color: var(--primary-color);
+}
+
+/* Ensure header links also animate */
+.project-links a {
+    transition: all 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: var(--primary-color);
+    /* Rotate on hover */
+    transform: scale(1.1);
+}
+
+/* Chatbot Widget */
+.chat-widget {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chat-btn {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(0, 238, 255, 0.4);
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.chat-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 238, 255, 0.6);
+}
+
+.chat-btn i {
+    font-size: 20px;
+}
+
+.chat-window {
+    width: 350px;
+    height: 500px;
+    background: var(--card-bg);
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform-origin: bottom left;
+    animation: scaleUp 0.3s ease;
+}
+
+.chat-window.active {
+    display: flex;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.chat-header {
+    background: var(--darker-bg);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.header-logo span {
+    color: var(--primary-color);
+}
+
+#closeChatBtn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#closeChatBtn:hover {
+    color: var(--secondary-color);
+}
+
+.chat-window iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 480px) {
+    .chat-widget {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        z-index: 9999;
+        align-items: flex-start;
+    }
+    .chat-window {
+        width: calc(100vw - 50px);
+        height: 500px; /* Restored height so input box is visible */
+        max-height: 80vh; 
+    }
 }
